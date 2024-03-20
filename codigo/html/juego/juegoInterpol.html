@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atrapa al fugitivo</title>
+    <link rel="stylesheet" href="../../css/juego/juegoInterpol.css">
+</head>
+<body>
+
+    <header>
+        <img src="../../img/juego/juegoInterpol/comparativaInterpol/logoIntPeque.png" alt="Interpol" class="logoInterpol" />
+        
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' ><label></label>
+            <ul>
+                <li><a href='https://www.interpol.int/es/Quienes-somos/Que-es-INTERPOL'>¿Quiénes somos?</a></li>
+                <li><a class='dropdown-arrow'>Delitos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='https://www.interpol.int/es/Delitos/Corrupcion'>Corrupción</a></li>
+                        <li><a href='https://www.interpol.int/es/Delitos/Ciberdelincuencia'>Ciberdelincuencia</a></li>
+                        <li><a href='https://www.interpol.int/es/Delitos/Terrorismo'>Terrorismo</a></li>
+                    </ul>
+                </li>
+                <li><a href='../../html/comparativa/comparativaInterpol.html'>Notificaciones</a></li>
+                <li><a class='dropdown-arrow' href='#'>¿Qué puede hacer usted?</a>
+                    <ul class='sub-menus'>
+                        <li><a href='https://www.interpol.int/es/Que-puede-hacer-usted/Protejase'>Protéjase</a></li>
+                        <li><a href='https://www.interpol.int/es/Que-puede-hacer-usted/Ayudenos-a-encontrar'>Ayúdenos a encontrar</a></li>
+                        <li><a href='https://www.interpol.int/es/Que-puede-hacer-usted/Si-necesita-ayuda'>Si necesita ayuda</a></li>
+                    </ul>
+                </li>
+                <li><a href='https://www.interpol.int/es/Contactos/Contactar-con-INTERPOL'>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contenedor">
+    
+        <div class="letrero">Atrapa</div> 
+
+        <div class="letrero"> 
+            <span>al Fugitivo Internacional</span>
+        </div>
+    
+    </div>
+
+    <main>       
+        <div id="popupBackground">
+            <div id="popupContainer">
+                <img src="../../img/juego/juegoInterpol/policia.jpg" alt="Policía">
+                <p>Bienvenido detective!, <br>
+                    Soy el Agente <br>
+                    SANTIAGO CRUZ. <br>
+                    sigue mis instrucciones, <br>
+                    Es hora de capturar a los fugitivos.</p>
+                <button id="closePopup">Empezar</button>
+            </div>
+        </div> 
+
+        <div id="cuadroNegro">
+
+            <div class="rectangulo" id="rectanguloNegro1">
+                <img src="../../img/juego/juegoInterpol/fugitivoNivel1.jpg" alt="Fugitivo Nivel 1">
+            </div>
+
+            <div class="rectangulo" id="rectanguloNegro2">
+                <p id="pNegro">Descripción inicial del fugitivo</p>
+            </div>
+        </div>
+
+        <div id="gameArea">
+            <img src="../../img/juego/juegoInterpol/fugitivo1.jpg" id="fugitivo" alt="Fugitivo">
+            </div>
+
+
+        <div id="cuadroVerde">
+
+            <img src="../../img/juego/juegoInterpol/policia.jpg" id="policia" alt="Policía">
+                
+                <div id="contenedorInstrucciones">
+                    <p id="textoInstrucciones">Captura al fugitivo siguiendo las pistas. ¡Tienes 5 intentos antes de que escape!</p>
+                </div>
+                
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; 2024 INTERPOL | Todos los derechos reservados</p>
+    </footer>
+    <script src="../../js/juego/juegoInterpol.js"></script>
+</body>
+</html>
